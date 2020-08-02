@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    color: #333333;
+}
+body {
+    background: #eeeeee;
+}
+h1{
+    text-align: center;
+}
+
+.ps {
+    color:indianred;
+}
+
+#restaurant{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+    padding: 15px;
+
+    #box{
+        box-shadow: 0 5px 5px solid rgba(0,0,0,0.5);
+        padding: 30px;
+        background: #ffffff;
+
+        h5{
+            padding: 5;
+        }
+    }
+}

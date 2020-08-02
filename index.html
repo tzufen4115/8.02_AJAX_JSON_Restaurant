@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh"">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐廳資訊</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>臺中餐餐具到好餐廳列表</h1>
+    <div id="restaurant">
+        <div id="box" v-for="d in datas">
+            <h2>餐廳名稱:{{ d["品牌名稱"] }}</h2>
+            <h4>店家型態:{{ d["店家型態"] }}</h4>
+            <h4>連絡電話:{{ d["連絡電話"] }}</h4>
+            <h4>聯絡地址:{{ d["聯絡地址"] }}</h4>
+            <h4 class="ps">好康內容:{{ d["好康內容"] }}</h4>
+            <h4 class="ps">備註:{{ d["備註"] }}</h4>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./restaurant.js"></script>
+</body>
+</html>
